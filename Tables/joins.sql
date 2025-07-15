@@ -17,3 +17,18 @@ FROM users_lenguajes
 join users
 on users_lenguajes.user_id = users.user_id
 join lenguajes on users_lenguajes.lenguaje_id= lenguajes.lenguaje_id;
+
+--left join
+SELECT * FROM users 
+LEFT JOIN dni 
+on users.user_id = dni.user_id;
+
+SELECT name, dni_number FROM users 
+LEFT JOIN dni 
+on users.user_id = dni.user_id;
+
+
+--RIGHT JOIN
+SELECT name, dni_number FROM users 
+RIGHT JOIN dni 
+on users.user_id = dni.user_id;
