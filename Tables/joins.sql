@@ -11,7 +11,7 @@ SELECT name,dni_number FROM
 users inner join dni 
 on users.user_id = dni.user_id  ORDER BY age;
 
---1:n
+--n:n
 SELECT users.name,lenguajes.name 
 FROM users_lenguajes
 join users
